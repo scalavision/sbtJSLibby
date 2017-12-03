@@ -15,7 +15,7 @@ addSbtPlugin("scalavision" % "sbtlibby" % "0.1-SNAPSHOT")
 
 In your build.sbt file just add the common libraries you want to use:
 ```scala
-enablePlugins(SbtLibby)
+enablePlugins(SbtJSLibby)
 ```
 
 ```scala
