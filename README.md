@@ -10,7 +10,7 @@ sbt publishLocal
 ```
 Add it to project/plugins.sbt
 ```scala
-addSbtPlugin("scalavision" % "sbtlibby" % "0.1-SNAPSHOT")
+addSbtPlugin("scalavision" % "sbtjslibby" % "0.1-SNAPSHOT")
 ```
 
 In your build.sbt file just add the common libraries you want to use:
