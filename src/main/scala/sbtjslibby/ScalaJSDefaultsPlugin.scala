@@ -34,7 +34,7 @@ object ScalaJSDefaultsPlugin
   )
   
   override lazy val projectSettings = Seq(
-    scalaJSDefaultSettings := scalaJsDefaults,
+    scalaJSDefaults := scalaJsDefaults,
     scalaJsDom := "org.scala-js" %%% "scalajs-dom" % scalaJsDomVersion,
     scalaTags := "com.lihaoyi" %%% "scalatags" % scalaTagsVersion,
     scalaRx := "com.lihaoyi" %%% "scalarx" % scalaRxVersion,
@@ -55,7 +55,7 @@ object ScalaJSDefaultsPlugin
   override def requires = ScalaJSPlugin
 
   object autoImport {
-    val scalaJSDefaultSettings = settingKey[Seq[Setting[_]]]("A setting that is automatically imported to the build")
+    val scalaJSDefaults = settingKey[Seq[Setting[_]]]("A setting that is automatically imported to the build")
     val scalaJSDefaultDeps = settingKey[Seq[ModuleID]]("A task that is automatically imported to the build")
     val scalaJsDom = settingKey[ModuleID]("scalajs dom api")
     val scalaTags = settingKey[ModuleID]("scalatags dependency")
