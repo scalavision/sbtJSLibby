@@ -6,7 +6,7 @@ import sbt.plugins.JvmPlugin
 import org.scalajs.sbtplugin.ScalaJSPlugin
 import org.scalajs.sbtplugin.ScalaJSPlugin.autoImport._
 
-object ScalaJSDefaultsPlugin
+object SbtJSLibby 
   extends AutoPlugin {
 
 //  import org.scalajs.sbtplugin.ScalaJSPlugin.autoImport._
